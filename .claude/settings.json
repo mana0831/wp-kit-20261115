@@ -1,0 +1,47 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(.env)",
+      "Read(.env.local)",
+      "Read(.env.production)",
+      "Read(**/*.sql)",
+      "Read(**/*.sql.gz)",
+      "Read(**/*.sql.zip)",
+      "Read(**/*.dump)",
+      "Read(**/wp-config.php)",
+      "Read(**/mt-config.cgi)",
+      "Read(**/.htpasswd)",
+      "Read(**/wp-content/uploads/**)",
+      "Read(**/wp-content/backup-db/**)",
+      "Read(**/wp-content/backups/**)",
+      "Read(**/wp-content/ai1wm-backups/**)",
+      "Read(**/wp-content/updraft/**)",
+      "Read(~/.ssh/**)",
+      "Read(~/.config/filezilla/**)",
+      "Read(//mnt/c/Users/*/AppData/Roaming/FileZilla/**)",
+      "Bash(git push *)",
+      "Bash(sudo *)",
+      "Bash(ssh *)",
+      "Bash(scp *)",
+      "Bash(sftp *)",
+      "Bash(rsync *)",
+      "Bash(ftp *)",
+      "Bash(lftp *)",
+      "Bash(mysqldump *)",
+      "Bash(wp db export *)",
+      "Bash(./clean-dev-code.sh *)",
+      "Bash(bash clean-dev-code.sh *)"
+    ],
+    "ask": [
+      "Bash(rm *)",
+      "Bash(git commit *)",
+      "Bash(git reset *)",
+      "Bash(git clean *)",
+      "Bash(docker compose down *)",
+      "Bash(docker compose exec db *)",
+      "Bash(wp db *)",
+      "Bash(curl *)",
+      "Bash(wget *)"
+    ]
+  }
+}
